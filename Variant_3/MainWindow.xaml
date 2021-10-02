@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TreeView>
+            <TreeViewItem Header="Tree" FontSize="16">
+                <TreeViewItem Header="Tree" FontSize="16">
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Tree" FontSize="16">
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                    <TreeViewItem Header="One"/>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Tree" FontSize="16">
+                <TreeViewItem Header="One"/>
+                <TreeViewItem Header="One"/>
+                <TreeViewItem Header="One"/>
+                <TreeViewItem Header="One"/>
+                <TreeViewItem Header="One"/>
+            </TreeViewItem>
+        </TreeView>
     </Grid>
 </Window>
