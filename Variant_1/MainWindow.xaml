@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="2">
+            <ComboBox SelectedIndex="0"  Margin="40">
+                <ComboBoxItem Content="Раз"/>
+                <ComboBoxItem Content="Два"/>
+                <ComboBoxItem Content="Три"/>
+            </ComboBox>
+        </StackPanel>
+
+        <GroupBox Header="RadioButton" Grid.Row="0" Grid.Column="1" Margin="10">
+            <StackPanel Margin="20">
+                <RadioButton>Раз</RadioButton>
+                <RadioButton>Два</RadioButton>
+                <RadioButton>Три</RadioButton>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="CheckBox" Grid.Row="1" Grid.Column="1" Margin="10">
+            <StackPanel Margin="20">
+                <CheckBox>Раз</CheckBox>
+                <CheckBox>Два</CheckBox>
+                <CheckBox>Три</CheckBox>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
