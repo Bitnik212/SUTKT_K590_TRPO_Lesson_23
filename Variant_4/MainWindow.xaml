@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <DatePicker Grid.Row="0" Grid.Column="0" Padding="10" Name="datePicker" IsDropDownOpen="True" SelectedDateFormat="Long" />
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <Calendar x:Name="calendar" Margin="20" SelectedDate="09/29/2021" DisplayDate="09/29/2021"/>
+            <TextBox Margin="20,95,20,85" Height="20" Width="140" Text="{Binding SelectedDate, ElementName=calendar}"/>
+        </StackPanel>
     </Grid>
 </Window>
